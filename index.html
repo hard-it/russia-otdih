@@ -6,10 +6,239 @@
     <link rel="stylesheet" href="lib/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="lib/jquery.js"></script>
     <script src="lib/bootstrap.min.js"></script>
 </head>
 <body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container container">
+            <div class="header-info row">
+                <div class="header-info__logo col-12 col-md-3">
+                    <img src="images/header/logo.png" alt="Ваш отдых">
+                </div>
+                <div class="header-info__buttons col-12 col-md-6">
+                    <div class="header-info__row row">
+                        <div class="header-info__callback col-12 col-md-6">
+                            <a class="header-info__callback-link" href="#popup-callback" role="button" data-toggle="modal">Обратный звонок</a>
+                            <div class="modal fade" id="popup-callback" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Обратный звонок</h5>
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-info__order col-12 col-md-6">
+                            <a class="header-info__order-link" href="#popup-order" role="button" data-toggle="modal">Забронировать online</a>
+                            <div class="modal fade" id="popup-order" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Бронирование номера</h5>
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Забронировать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-info__control col-12">
+                            <a class="header-info__control-link" href="#">
+                                <img src="images/header/loop.png" alt="Контроль качества">
+                                <span  class="header-info__control-txt">Контроль качества</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-info__contacts col-12 col-md-3">
+                    <div class="header-info__contacts-phone">
+                        <a href="tel:+78002008558" class="header-info__contacts-link">8 (800) 200 85 58</a>
+                    </div>
+                    <div class="header-info__contacts-city">
+                        <ul class="header-info__contacts-list">
+                            <li class="header-info__contacts-item"><span>Кисловодск</span></li>
+                            <li class="header-info__contacts-item"><span>Москва</span></li>
+                            <li class="header-info__contacts-item"><span>Сочи</span></li>
+                        </ul>
+                    </div>
+                    <div class="header-info__contacts-lang">
+                        <a href="/en" class="header-info__contacts-lang-link">English version</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="container">
+                <div class="row">
+                     <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <div class="navbar-toggler-icon">
+                                <span class="fa fa-bars" aria-hidden="true"></span>
+                                <span>Меню</span>
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Выбрать санаторий</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Курорты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Тематические туры</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Спецпредложения</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Сотрудничество</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О компаниии</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-filter__banner">
+                <img class="header-filter__banner-img" src="images/header/banner.png" alt="Ваш отдых">
+            </div>
+            <div class="header-filter">
+                <div class="header-filter__container container">
+                    <div class="header-filter__wrap col-12 col-md-10">
+                        <div class="header-filter__params row">
+                            <div class="header-filter__region col-12 col-md-4">
+                                <select class="header-filter__params-select">
+                                    <option class="header-filter__option">Курорт</option>
+                                </select>
+                            </div>
+                            <div class="header-filter__sanatoium col-12 col-md-4">
+                                <select class="header-filter__params-select">
+                                    <option class="header-filter__option">Санаторий</option>
+                                </select>
+                            </div>
+                            <div class="header-filter__search col-12 col-md-4"><span>Выбрать</span></div>
+                        </div>
+                        <div class="header-filter__tags row">
+                            <div class="header-filter-cities col-12 col-md-8">
+                                <ul class="header-filter-cities-list">
+                                    <li class="header-filter-cities-item">
+                                        <a class="header-filter-cities-link" href="">КавМинВоды</a>
+                                    </li>
+                                    <li class="header-filter-cities-item">
+                                        <a class="header-filter-cities-link" href="">Киcловодск</a>
+                                    </li>
+                                    <li class="header-filter-cities-item">
+                                        <a class="header-filter-cities-link" href="">Ессентуки</a>
+                                    </li>
+                                    <li class="header-filter-cities-item">
+                                        <a class="header-filter-cities-link" href="">Железноводск</a>
+                                    </li>
+                                    <li class="header-filter-cities-item">
+                                        <a class="header-filter-cities-link" href="">Пятигорск</a>
+                                    </li>
+                                </ul>
+                                <ul class="header-filter-cities-list">
+                                    <li class="header-filter-cities-item">
+                                        <a class="header-filter-cities-link" href="">Краснодарский край</a>
+                                    </li>
+                                    <li class="header-filter-cities-item">
+                                        <a class="header-filter-cities-link" href="">Крым</a>
+                                    </li>
+                                    <li class="header-filter-cities-item">
+                                        <a class="header-filter-cities-link" href="">Абхазия</a>
+                                    </li>
+                                    <li class="header-filter-cities-item">
+                                        <a class="header-filter-cities-link" href="">Северный Кавказ</a>
+                                    </li>
+                                    <li class="header-filter-cities-item">
+                                        <a class="header-filter-cities-link" href="">Подмосковье</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-filter__search col-12 col-md-4">
+                                <form class="header-filter__search-form" action="">
+                                    <input class="header-filter__search-input" type="text" placeholder="Поиск...">
+                                    <button class="header-filter__search-btn">
+                                        <img src="images/header/search.png" alt="Поиск по сайту">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /END HEADER -->
+    <!-- CONTENT -->
+    <main class="content">
 
+    </main>
+    <!-- /END CONTENT -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-middle">
+            <div class="footer-middle__container container">
+                <div class="footer-middle__row row">
+                    <div class="footer-middle__item col-12 col-md-4">
+                        <div class="footer-middle__widget row">
+                            <div class="footer-middle__widget-txt col-8">
+                                <p class="footer-middle__widget-str">Мы в реестре туроператоров</p>
+                                <p class="footer-middle__widget-str">ООО "Ваш Отдых"</p>
+                                <p class="footer-middle__widget-str">РТО 015120</p>
+                            </div>
+                            <div class="footer-middle__widget-img col-4">
+                                <img src="images/footer/wlogo.png" alt="Ростуризм">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-middle__item col-12 col-md-4">
+
+                    </div>
+                    <div class="footer-middle__item col-12 col-md-4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom__container container">
+                <div class="footer-bottom__text">
+                    <p class="footer-bottom__text-str">2008 - 2020 Ваш Отдых. Курортное агентство.</p>
+                    <p class="footer-bottom__text-str">Прием и размещение туристов на курортах России.</p>
+                    <p class="footer-bottom__text-str">
+                        <a class="footer-bottom__text-link" href="">Политика конфиденциальности</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /END FOOTER -->
 </body>
 </html>
