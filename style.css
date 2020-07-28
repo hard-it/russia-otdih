@@ -246,6 +246,242 @@ p{
 
 /* SECTION CONTENT */
 
+.content{
+    padding: 40px 0;
+}
+
+/* BEST */
+
+.content-best__title{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-best__container{
+    padding:0
+}
+
+.content-best__card{
+    border-radius: 19px;
+    background-color: rgb(241, 241, 241);
+}
+
+.content-best__info{
+    padding:15px 25px 25px 25px
+}
+
+.content-best__name{
+    font-size: 16px;
+    font-weight:bold;
+    color: rgb(81, 81, 81);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.content-best__city {
+    font-size: 16px;
+    color: rgb(81, 81, 81);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.content-best__list{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content-best__el{
+    display:flex;
+    margin-bottom: 5px;
+}
+
+.content-best__el-txt{
+    display: inline-block;
+    width: 50%;
+}
+
+.content-best__link{
+    display: inline-block;
+    padding: 8px 0;
+    width: 100%;
+    color:#fff;
+    background-color: #9ebc53;
+    border-radius:40px;
+    text-align: center;
+}
+
+.content-best__link:hover{
+    background: #8ca64a;
+    color:#fff;
+    text-decoration:none
+}
+
+.content-best__carousel .owl-nav{
+    text-align:center;
+    padding: 20px 0;
+}
+
+.content-best__carousel .owl-nav button{
+    font-size:40px !important;
+    color: #8ca64a !important;
+    line-height:20px !important;
+    width:40px;
+    height:40px;
+    margin: 0 25px;
+    border-radius:50%;
+    border:1px solid #8ca64a !important;
+}
+
+.content-best__carousel .owl-nav button.disabled{
+    font-size:40px !important;
+    color: #cdcdcd !important;
+    line-height:0px !important;
+    width:40px;
+    height:40px;
+    margin: 0 25px;
+    border-radius:50%;
+    border:1px solid #cdcdcd !important;
+}
+
+.content-best__carousel .owl-nav button:focus{
+    outline:none !important
+}
+
+/* REQUEST */
+
+.content-request{
+    margin-bottom: 80px;
+}
+
+.content-request__container:after{
+    position:absolute;
+    content: "Перезвоним в течении 1 минуты";
+    bottom:-30px;
+    right:0;
+    font-size: 14px;
+    color: rgb(81, 81, 81);
+}
+
+.content-request__container{
+    position:relative;
+    background: #9bb755;
+    padding:20px 25px;
+    margin-bottom: 40px;
+}
+
+.content-request__row{
+    align-items:center
+}
+
+.content-request__title{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.content-request__form{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.content-request__input{
+    width:250px;
+    border:0;
+    padding:8px 0 8px 15px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+}
+
+.content-request__btn{
+    width:200px;
+    border:0;
+    background-color: rgb(248, 199, 63);
+    padding:8px 0;
+    border-radius: 40px;
+    color: #333
+}
+
+/* SLIDER */
+.content-slider{
+    margin: 40px 0 20px 0;
+}
+
+.content-slider__container{
+    padding:0
+}
+
+.content-slider__item{
+    position:relative;
+}
+
+.content-slider__title {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    text-align: right;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content-slider .owl-dots{
+    padding:10px 0;
+    text-align: center;
+}
+
+.content-slider .owl-dots button{
+    width:10px;
+    height:10px;
+    margin:5px;
+    background: #e2e2e2 !important;
+    border-radius:50%
+}
+
+.content-slider .owl-dots button:focus{
+    outline:0
+}
+
+.content-slider .owl-dots button.active{
+    background: #b9b9b9 !important;
+}
+
+.content-slider__title.dark{
+    color:#333
+}
+
+/* GALLERY */
+.content-gallery{
+    display: flex;
+    max-height:450px;
+    overflow:hidden;
+    margin: 40px 0;
+}
+
+.gallery-item img{
+    width: 100%;
+    height:auto
+}
+
+.gallery-item.small{
+    width:20%
+}
+
+.gallery-item.full{
+    width:30%
+}
 
 .footer{
     padding:20px 0
